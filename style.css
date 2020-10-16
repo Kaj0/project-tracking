@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+a:hover,button:hover{
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+    border: none;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+.leftcontainer{
+    width:50%;
+}
+.left{
+    width:70%;
+    margin: auto;
+}
+.logo{
+    width: 7%;
+    padding-top: 65px;
+    padding-bottom: 125px;
+}
+.logo img{
+    width: 100%;
+}
+.firstline{
+    font-size: 16px;
+    color: hsl(231, 7%, 65%);
+    letter-spacing: 3px;
+}
+.firstline button{
+    color:  hsl(207, 33%, 95%);
+    background-color: hsl(230, 29%, 20%);
+    padding: 5px 8px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+h1{
+    padding-top: 25px;
+    padding-bottom: 35px;
+    font-size: 60px;
+    width: 95%;
+    font-weight: 700;
+    color: hsl(230, 29%, 20%);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.thirdline{
+    font-size: 18px;
+    color: hsl(230, 11%, 40%);
+    padding-bottom: 55px;
+    width: 60%;
+}
+.fourthline{
+    font-size: 16px;
+    color: hsl(231, 7%, 65%);
+    letter-spacing: 2px;
+}
+.fourthline button{
+    margin-right: 10px;
+    background-color: hsl(0, 100%, 68%);
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.fourthline button a{
+    color: hsl(207, 33%, 95%);
+}
+
+.rightcontainer{
+    width: 50%;
+}
+.greybox{
+    background-color: hsl(207, 33%, 95%);
+    width: 100%;
+    height:70%;
+    border-bottom-left-radius:100px ;
+}
+.right{
+    width: 100%;
+    transform: translateY(-400px);
+}
+.otherside{
+    margin: auto;
+    display: flex;
+    margin-top: 45px;
+    width: 60%;
+    font-weight:700;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    
+    padding-top: 130px;
+    width: 100%;
+    overflow: hidden;
+}
+.image img{
+    width:120%;
+    
+}
+li a{
+  
+    margin-right: 30px;
+    color: hsl(230, 29%, 20%);
+}
+.circle{
+    width: 6px;
+    height: 6px;
+    margin-right: 30px;
+    margin-top: 7px;
+    border-radius: 4px;
+    background-color: hsl(230, 11%, 40%);
+}
+.mobilenav{
+    position: absolute;
+    bottom:0;
+    right:0;
+    opacity: 0;
+}
+.login a{
+    color: hsl(230, 11%, 40%);
+}
+@media screen and (max-width:1024px){
+    .logo{
+        width: 10%;
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+    .firstline{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .firstline button{
+        font-size: 16px;
+    }
+    h1{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 44px;
+        width: 100%;
+    }
+    .thirdline{
+        font-size: 16px;
+        padding-bottom: 40px;
+        width: 70%;
+    }
+    .fourthline{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .right{
+        width: 100%;
+        transform: translateY(-350px);
+    }
+    .otherside{
+        margin: auto;
+        display: flex;
+        margin-top: 75px;
+        width: 70%;
+        font-size: 12px;
+    }
+    .image{
+        padding-top: 110px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .circle{
+        width: 5px;
+        height: 5px;
+        margin-right: 30px;
+        margin-top: 5px;
+        border-radius: 4px;
+        background-color: hsl(230, 11%, 40%);
+        opacity: 1;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+    .leftcontainer{
+        width:100%;
+    }
+    .left{
+        width:80%;
+        margin: auto;
+    }
+    .logo{
+        width: 7%;
+        position: absolute;
+        top: 10px;
+        left: 80px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .firstline{
+        padding-top: 200px;
+        font-size: 24px;
+        color: hsl(231, 7%, 65%);
+        letter-spacing: 6px;
+    
+    }
+    .firstline button{
+        color:  hsl(207, 33%, 95%);
+        background-color: hsl(230, 29%, 20%);
+        padding: 5px 8px;
+        border-radius: 15px;
+        margin-right: 15px;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    h1{
+        padding-top: 25px;
+        padding-bottom: 35px;
+        font-size: 80px;
+        width:100%;
+        color: hsl(230, 29%, 20%);
+    }
+    .thirdline{
+        font-size: 24px;
+        color: hsl(230, 11%, 40%);
+        padding-bottom: 55px;
+        width: 70%;
+        letter-spacing: 1px;
+    }
+    .fourthline{
+        font-size: 18px;
+        color: hsl(231, 7%, 65%);
+        letter-spacing: 5px;
+    }
+    .fourthline button{
+        font-size: 18px;
+        margin-right: 10px;
+        background-color: hsl(0, 100%, 68%);
+        padding: 15px 20px;
+        border-radius: 3px;
+        font-weight: 700;
+    }
+    .fourthline button a{
+        color: hsl(207, 33%, 95%);
+    }
+    
+    .rightcontainer{
+        width: 100%;
+    }
+    .greybox{
+        background-color: hsl(207, 33%, 95%);
+        width: 50%;
+        position: absolute;
+        top:0;
+        right:0;
+        height:800px;
+        border-bottom-left-radius:100px ;
+        
+    }
+    .right{
+        width: 100%;
+        transform: translateY(50px);
+    }
+    .otherside{
+        margin: auto;
+        display: block;
+        margin-top: 45px;
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+
+    }
+    ul{
+        display: block;
+    }
+    .image{  
+        padding-top: 200px;
+        width: 95%;
+        float: right;
+        overflow: hidden;
+    }
+    .image img{
+        width:120%;
+        
+    }
+    li a{
+        font-weight: 700;
+        margin-right: 30px;
+        color: hsl(230, 29%, 20%);
+    }
+    .circle{
+        width: 8px;
+        height: 8px;
+        margin-right: 30px;
+        margin-top: 5px;
+        border-radius: 4px;
+        background-color: hsl(230, 11%, 40%);
+    }
+    .mobilenav{
+        position: absolute;
+        width: 7%;
+        top:40px;
+        right:80px;
+        opacity:1;
+    }
+    .mobilenav img{
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width:500px){
+    .container{
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 50px;
+    }
+    .circle{
+        margin-right: 0;
+    }
+    .leftcontainer{
+        width:100%;
+    }
+    .left{
+        width:80%;
+        margin: auto;
+    }
+    .logo{
+        width: 7%;
+        position: absolute;
+        top: 0px;
+        left: 50px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .firstline{
+        width: fit-content;
+        padding-top: 50px;
+        font-size: 12px;
+        color: hsl(231, 7%, 65%);
+        letter-spacing: 2px;
+    
+    }
+    .firstline button{
+        width: fit-content;
+        color:  hsl(207, 33%, 95%);
+        background-color: hsl(230, 29%, 20%);
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    h1{
+        padding-top: 25px;
+        padding-bottom: 35px;
+        font-size: 40px;
+        width:100%;
+        color: hsl(230, 29%, 20%);
+    }
+    .thirdline{
+        font-size: 14px;
+        color: hsl(230, 11%, 40%);
+        padding-bottom: 55px;
+        width: 85%;
+        letter-spacing: 1px;
+    }
+    .fourthline{
+        width: fit-content;
+        font-size: 12px;
+        color: hsl(231, 7%, 65%);
+        letter-spacing: 1px;
+    }
+    .fourthline button{
+        width: fit-content;
+        font-size: 14px;
+        background-color: hsl(0, 100%, 68%);
+        padding: 15px 20px;
+        border-radius: 3px;
+        font-weight: 700;
+    }
+    .fourthline button a{
+        color: hsl(207, 33%, 95%);
+    }
+    
+    .rightcontainer{
+        width: 100%;
+    }
+    .greybox{
+        background-color: hsl(207, 33%, 95%);
+        width: 50%;
+        position: absolute;
+        top:0;
+        right:0;
+        height:420px;
+        border-bottom-left-radius:50px ;
+        
+    }
+    .right{
+        width: 95%;
+        transform: translateY(-50px);
+        float: right;
+    }
+    .otherside{
+        margin: auto;
+        display: flex;
+        margin-top: 45px;
+        width: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+
+    }
+    .image{  
+        padding-top: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .image img{
+        width:120%;
+        
+    }
+    li a{
+        font-weight: 700;
+        margin-right: 0;
+        color: hsl(230, 29%, 20%);
+    }
+    .mobilenav{
+        position: absolute;
+        width: 7%;
+        top:125px;
+        right:50px;
+        opacity:1;
+    }
+    .mobilenav img{
+        width: 100%;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
